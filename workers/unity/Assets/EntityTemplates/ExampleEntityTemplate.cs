@@ -1,6 +1,7 @@
 ﻿using Improbable.General;
 using Improbable.Worker;
 using Improbable.Math;
+using Improbable.Player;
 using Improbable.Unity.Core.Acls;
 using UnityEngine;
 
@@ -16,9 +17,16 @@ namespace Assets.EntityTemplates
 
             // Define components attached to snapshot entity
             exampleEntity.Add(new WorldTransform.Data(new WorldTransformData(new Coordinates(-5, 10, 0))));
+            exampleEntity.Add(new Name.Data(new NameData("your_example_entity")));
 
-            // Grant FSim (server-side) workers write-access over all of this entity's components, read-access for visual (e.g. client) workers
-            var acl = Acl.GenerateServerAuthoritativeAcl(exampleEntity);
+            var acl = Acl.Build()
+                // Both FSim (server) workers and client workers granted read access over all states
+                .SetReadAccess(CommonPredicates.PhysicsOrVisual)
+                // Only FSim workers granted write access over WorldTransform component
+                .SetWriteAccess<WorldTransform>(CommonPredicates.PhysicsOnly)
+                // Only client workers granted write access over Name component
+                .SetWriteAccess<Name>(CommonPredicates.VisualOnly);
+
             exampleEntity.SetAcl(acl);
 
             return exampleEntity;
