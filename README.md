@@ -3,8 +3,6 @@
 
 *Copyright Improbable 2016*
 
-- *Accompanying Tutorial*: [spatialos.improbable.io/docs/latest/tutorials/your-first-project/lesson1](https://spatialos.improbable.io/docs/latest/tutorials/your-first-project/lesson1)
-
 - *GitHub Repository*: [github.com/spatialos/BlankProject](https://github.com/spatialos/BlankProject)
 
 ---
