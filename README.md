@@ -22,7 +22,6 @@ It contains:
 
 ## Using the BlankProject
 
-For instructions on how to use and set-up this BlankProject, follow the Your First Project tutorial, available in
-the [Improbable documentation](https://spatialos.improbable.io/docs/).
+[SpatialOS documentation](https://spatialos.improbable.io/docs/).
 
 To report bugs or to give feedback on this project, please contact SpatialOS Support.
