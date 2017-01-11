@@ -27,6 +27,11 @@
   "workers": [
   {
     "worker_type": "UnityFSim",
+    "permissions": [
+        {
+          "all": {}
+        }
+    ],
     "load_balancing": {
         "static_hex_grid": {
           "worker_radius_meters": 5000.0,
