@@ -16,7 +16,7 @@ namespace Assets.EntityTemplates
             var exampleEntity = new SnapshotEntity { Prefab = "ExampleEntity" };
 
             // Define components attached to snapshot entity
-            exampleEntity.Add(new WorldTransform.Data(new WorldTransformData(new Coordinates(-5, 10, 0))));
+            exampleEntity.Add(new WorldTransform.Data(new WorldTransformData(new Coordinates(0, 0, 0))));
             exampleEntity.Add(new Name.Data(new NameData("your_example_entity")));
 
             var acl = Acl.Build()
