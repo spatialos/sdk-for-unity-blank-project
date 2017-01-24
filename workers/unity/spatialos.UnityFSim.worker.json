@@ -21,7 +21,6 @@
     }
   },
   "managed": {
-    "run_type": "EXECUTABLE_ZIP",
     "linux": {
       "artifact_name": "UnityFSim@Linux.zip",
       "command": "UnityFSim@Linux",
@@ -109,7 +108,6 @@
   },
   "external": {
     "default": {
-      "run_type": "EXECUTABLE",
       "windows": {
         "command": "build/worker/UnityFSim@Windows/UnityFSim@Windows.exe",
         "arguments": [
