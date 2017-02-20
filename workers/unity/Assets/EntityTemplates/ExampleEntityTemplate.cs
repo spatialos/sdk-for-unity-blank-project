@@ -21,11 +21,11 @@ namespace Assets.EntityTemplates
 
             var acl = Acl.Build()
                 // Both FSim (server) workers and client workers granted read access over all states
-                .SetReadAccess(CommonPredicates.PhysicsOrVisual)
+                .SetReadAccess(CommonRequirementSets.PhysicsOrVisual)
                 // Only FSim workers granted write access over WorldTransform component
-                .SetWriteAccess<WorldTransform>(CommonPredicates.PhysicsOnly)
+                .SetWriteAccess<WorldTransform>(CommonRequirementSets.PhysicsOnly)
                 // Only client workers granted write access over Name component
-                .SetWriteAccess<Name>(CommonPredicates.VisualOnly);
+                .SetWriteAccess<Name>(CommonRequirementSets.VisualOnly);
 
             exampleEntity.SetAcl(acl);
 

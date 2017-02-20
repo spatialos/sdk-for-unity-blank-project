@@ -17,7 +17,7 @@ public class SnapshotMenu : MonoBehaviour
     private static void GenerateSnapshotProgrammatically()
     {
         var snapshotEntities = new Dictionary<EntityId, SnapshotEntity>();
-        var currentEntityId = 0;
+        var currentEntityId = 1;
 
         snapshotEntities.Add(new EntityId(currentEntityId++), ExampleEntityTemplate.GenerateExampleSnapshotEntityTemplate());
 
