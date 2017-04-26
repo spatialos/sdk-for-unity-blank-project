@@ -65,8 +65,8 @@
             ".spatialos/bin/CodeGenerator.exe",
             "--",
             "--json-dir=.spatialos/json",
-            "--component-output-dir=Assets/Improbable/Generated/Components",
-            "--component-editor-output-dir=Assets/Improbable/Editor/Generated/Components",
+            "--unity-component-output-dir=Assets/Improbable/Generated/Components",
+            "--unity-editor-component-output-dir=Assets/Improbable/Editor/Generated/Components",
             "--reader-writer-output-dir=.spatialos/generated/readers_writers"
           ]
         },
