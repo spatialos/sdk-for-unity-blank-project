@@ -1,9 +1,9 @@
 # Blank Project
 ---
 
-*Copyright Improbable Worlds Ltd, 2017*
+*Copyright Improbable 2017*
 
-- *GitHub repository*: [https://github.com/spatialos/BlankProject](https://github.com/spatialos/BlankProject)
+- *GitHub Repository*: [github.com/spatialos/BlankProject](https://github.com/spatialos/BlankProject)
 
 ---
 
@@ -14,10 +14,14 @@ This is a blank SpatialOS project that you can use to build your own SpatialOS a
 It contains:
 
 * A SpatialOS project descriptor.
-* A Unity worker.
+* Unity worker
 * Bare-bones Launch Configurations for automatically and manually launching workers.
 * Bare-bones Client and Physics Scenes with a `Bootstrap.cs` file.
 * An example deployment configuration, `default_launch.json`.
 * `.gitignore` files for a SpatialOS project.
 
-If you run into problems, or want to give us feedback, please visit the [SpatialOS forums](https://forums.improbable.io/).
+## Using the Blank Project
+
+[SpatialOS documentation](https://spatialos.improbable.io/docs/).
+
+To report bugs or to give feedback on this project, please contact SpatialOS Support.
