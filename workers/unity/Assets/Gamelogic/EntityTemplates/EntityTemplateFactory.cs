@@ -1,4 +1,5 @@
-﻿namespace Assets.Gamelogic.EntityTemplates
+﻿
+namespace Assets.Gamelogic.EntityTemplates
 {
     public static class EntityTemplateFactory
     {

@@ -3,8 +3,8 @@ using Improbable.Unity.Configuration;
 using Improbable.Unity.Core;
 using UnityEngine;
 
-// Placed on a GameObject in the ClientScene to execute connection logic on client startup.
-namespace Assets.Gamelogic.Global
+// Placed on a GameObject in a Unity scene to execute SpatialOS connection logic on startup.
+namespace Assets.Gamelogic.Core
 {
     public class Bootstrap : MonoBehaviour
     {
