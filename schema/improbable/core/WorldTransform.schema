@@ -1,6 +1,0 @@
-package improbable.core;
-
-component WorldTransform {
-    id = 1000;
-    EntityPosition position = 1;
-}

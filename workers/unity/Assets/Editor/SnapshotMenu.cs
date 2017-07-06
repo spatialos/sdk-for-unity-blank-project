@@ -15,14 +15,14 @@ namespace Assets.Editor
 		[UsedImplicitly]
 		private static void GenerateDefaultSnapshot()
 		{
-			var snapshotEntities = new Dictionary<EntityId, SnapshotEntity>();
+			var snapshotEntities = new Dictionary<EntityId, Entity>();
 
 			// Add entity data to the snapshot
 
 			SaveSnapshot(snapshotEntities);
 		}
 
-		private static void SaveSnapshot(IDictionary<EntityId, SnapshotEntity> snapshotEntities)
+		private static void SaveSnapshot(IDictionary<EntityId, Entity> snapshotEntities)
 		{
 			File.Delete(SimulationSettings.DefaultSnapshotPath);
 			var maybeError = Snapshot.Save(SimulationSettings.DefaultSnapshotPath, snapshotEntities);
